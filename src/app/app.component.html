@@ -1,0 +1,28 @@
+<div gdauto gdColumns='repeat(24,1fr)' class='full24'>
+	<!--gdauto just need at the Outermost-->
+	<!-- Split to 24 spans-->
+	<div class='span1'>1</div> <!-- If you don't define gdcolumn, gdcolumn is default by 1 span -->
+	<div class='span2' gdColumn='auto / span 1'>2</div> <!--  Define gdcolumn by 1 span, it mean this div use 1 span -->
+	<div class='span1' gdColumn='auto / span 2'>3</div> <!--  Define gdcolumn by 3 span, it mean this div use 3 span -->
+	<div class='span2' gdColumn='auto / span 20'>4</div>
+	<!--  Define gdcolumn by 20 span, it mean this div use 20 span -->
+	<div class='span1' gdColumn='auto / span 4'>5</div>
+	<!--  Every row splited to 24, if spans in a row more than 24, it will start a new line arrangement. -->
+
+
+	<div gdColumns='repeat(5,1fr)' gdColumn='auto/ span 24'>
+		<!--  Define gdcolumn by 24 spans (same as entire row), but internally divided into 5 spans -->
+		<div gdColumn='auto/span 3' class='span2'>6</div> <!-- In here, total row have 5 spans, and define 3 spans -->
+		<div gdColumn='auto/span 2' class='span1'>7</div> <!-- In here, total row have 5 spans, and define 2 spans -->
+	</div>
+	<div gdRows='repeat(5,1fr)' gdColumn='3 / span 20' class='full5'>
+		<!--In here, define 20 spans and start at third span and end with twentieth span , use gdrows to split 5 rows in range. -->
+		<div class='span1'>8</div> <!-- If you don't define gdcolumn, gdcolumn is default by 1 span -->
+		<div class='span2' gdColumn='auto / span 3'>9</div>
+		<!-- If you define gdcolumn in row , it will auto spilt in this range -->
+		<div class='span1' gdRow='auto / span 2'>10</div> <!-- Define gdRow by 2 row-->
+		<div class='span2' gdColumn=' auto / span 2' gdRow='auto / span 2'>11</div> <!-- Define gdRow by 2 row and -->
+	</div>
+</div>
+
+<media-query-status></media-query-status>

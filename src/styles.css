@@ -1,0 +1,32 @@
+/* Add application styles & imports to this file! */
+
+.bounds {
+  background-color: #ddd;
+  height: 800px;
+}
+
+.full24 {
+  background: rgb(0, 72, 128);
+  color: white;
+}
+.full5 {
+  background: rgb(0, 100, 177);
+  color: white;
+}
+
+.span1 {
+  background: #0092ff;
+  color: white;
+}
+
+.span2 {
+  background: #3daafc;
+  color: white;
+}
+
+.sec1,
+.sec2,
+.sec3,
+.full24 {
+  text-align: center;
+}
