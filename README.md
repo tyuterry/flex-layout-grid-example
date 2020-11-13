@@ -1,4 +1,4 @@
-# flex-layout-seed-grid-example
+# flex-layout-grid-example
 
 A easy example for Angular Flex Layout Grid system.
 
